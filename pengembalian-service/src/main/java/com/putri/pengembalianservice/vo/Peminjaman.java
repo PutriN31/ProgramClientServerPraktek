@@ -27,4 +27,8 @@ public class Peminjaman {
     private String tglpinjam;
     private String tglkembali;
 
+    public String getTglKembali() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }

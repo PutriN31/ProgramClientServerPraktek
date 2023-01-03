@@ -5,9 +5,9 @@
 package com.putri.pengembalianservice.ServiceController;
 
 import com.putri.pengembalianservice.entity.Pengembalian;
-import com.putri.pengembalianservice.service.Pengembalianservice;
-import com.putri.pengembalianservice.service.Pengembalianservice;
+import com.putri.pengembalianservice.service.PengembalianService;
 import com.putri.pengembalianservice.vo.ResponseTemplateVO;
+import java.text.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,20 +18,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author Administrator
- */@RestController
-@RequestMapping("/pngembalian")
+ * @author putri
+ */
+@RestController
+@RequestMapping("/pengembalian")
 public class PengembalianController {
     @Autowired
-    private Pengembalianservice pengembalianservice;
+    private PengembalianService pengembalianService;
     
     @PostMapping("/")
-    public Pengembalian savePengembalian(@RequestBody Pengembalian pengembalian){
-        return pengembalian.savePengembalian(pengembalian);
+    public Pengembalian savePengembalian(@RequestBody Pengembalian pengembalian) throws ParseException {
+        return pengembalianService.savePengembalian(pengembalian);
     }
     
     @GetMapping("{id}")
     public ResponseTemplateVO getPengembalian(@PathVariable("id") Long pengembalianId){
-        return pengembalianservice.getPengembalian(pengembalianId);
+     return pengembalianService.getPengembalian(pengembalianId);
     }
 }

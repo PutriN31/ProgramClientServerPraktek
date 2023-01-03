@@ -1,1 +1,11 @@
-com\putri\pengembalianservice\PengembalianServiceApplication.class
+com\putri\pengembalianservice\PengembalianServicesApplication.class
+com\putri\pengembalianservice\vo\Peminjaman.class
+com\putri\pengembalianservice\vo\ResponseTemplateVOPinjam.class
+ResponseTemplateVOPinjam\java.class
+com\putri\pengembalianservice\vo\Buku.class
+com\putri\pengembalianservice\vo\ResponseTemplateVO.class
+com\putri\pengembalianservice\vo\Anggota.class
+com\putri\pengembalianservice\ServiceController\PengembalianController.class
+com\putri\pengembalianservice\repository\PengembalianRepository.class
+com\putri\pengembalianservice\service\PengembalianService.class
+com\putri\pengembalianservice\entity\Pengembalian.class

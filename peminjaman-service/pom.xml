@@ -12,7 +12,7 @@
 	<artifactId>peminjaman-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>peminjaman-service</name>
-	<description>peminjaman-service</description>
+	<description>Anggota Service</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
